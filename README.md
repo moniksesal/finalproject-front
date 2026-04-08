@@ -159,7 +159,7 @@ Este es el cliente de mi aplicación de gestión de entrenamientos, desarrollado
     ```
 
 ## Estructura del Proyecto
-
+```
 finalproject-front-gym/
 ├── public/
 │   ├── favicon.svg
@@ -202,6 +202,7 @@ finalproject-front-gym/
 ├── eslint.config.js
 ├── vite.config.js
 └── README.md
+```
 
 ## Funcionalidades
 
