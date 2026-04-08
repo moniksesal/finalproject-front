@@ -4,7 +4,6 @@ import {Link, useNavigate} from 'react-router-dom'
 import styles from './RoutinesPage.module.css'
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000'
 
-
 const DIAS_SEMANA = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo']
 
 const RoutinesPage = () => {
@@ -54,9 +53,9 @@ const RoutinesPage = () => {
     }
 
     const normalizar = (texto) => {
-        let minusculas = texto.toLowerCase() //pasa a minusculas
-        let descompuesto = minusculas.normalize('NFD') //descompone los caracteres especiales (ñ, tildes)
-        let limpio = descompuesto.replace(/[\u0300-\u036f]/g, "") //elimina los acentos y otros signos
+        let minusculas = texto.toLowerCase()
+        let descompuesto = minusculas.normalize('NFD')
+        let limpio = descompuesto.replace(/[\u0300-\u036f]/g, "")
         return limpio
     }
 
@@ -105,7 +104,8 @@ const RoutinesPage = () => {
                                     {rutinasDelDia.length > 0 ? (
                                         rutinasDelDia.map(rutina => (
                                             <div key={rutina.id} className={styles.routineCard}>
-                                                <Link to={`/entrenar/${rutina.id}`} className={styles.routineInfo}>
+                                                {/* Se cambia /entrenar/ por /rutinas/ para ver el detalle y no la pantalla desactivada */}
+                                                <Link to={`/rutinas/${rutina.id}`} className={styles.routineInfo}>
                                                     <span className={styles.routineIcon}>🏋️‍♂️</span>
                                                     <span className={styles.routineName}>{rutina.nombre}</span>
                                                 </Link>

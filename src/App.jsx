@@ -38,7 +38,7 @@ function App() {
                     <Route path="/rutinas/:id" element={<RoutineDetail />} />
                     <Route path="/rutinas/crear/:day" element={<CreateRoutine />} />
                     <Route path="/ejercicios/nuevo" element={<CreateExercise />} />
-                    <Route path="/entrenar/:id" element={<WorkoutSession />} />
+                    {/*<Route path="/entrenar/:id" element={<WorkoutSession />} />*/}
                     {/* Si entra a cualquier ruta que no exista, redirige a dashboard */}
                     <Route path="*" element={<Navigate to="/" />} />
                     </>

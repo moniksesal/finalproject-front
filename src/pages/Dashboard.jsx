@@ -70,58 +70,26 @@ const Dashboard = () => {
 
             <div className={styles.statsGrid}>
                 <div className={styles.statCard}>
-                    <p className={styles.statLabel}>Total Ejercicios</p>
-                    <p className={styles.statValue}>{summary.total_ejercicios_realizados}</p>
-                </div>
-                <div className={styles.statCard}>
                     <p className={styles.statLabel}>Tus Rutinas</p>
                     <p className={styles.statValue}>{summary.total_rutinas}</p>
                 </div>
+                <div className={styles.statCard}>
+                    <p className={styles.statLabel}>Objetivo Actual</p>
+                    <p className={styles.statValue} style={{fontSize: '20px', textTransform: 'uppercase'}}>{user_info.objetivo || 'Mejorar'}</p>
+                </div>
             </div>
 
-            {coach.empty_state ? (
-                <div className={styles.emptyState}>
-                    <div className={styles.emptyIcon}>🏋️‍♀️</div>
-                    <h2 className={styles.emptyTitle}>No tienes rutinas</h2>
-                    <p className={styles.emptyText}>Empieza creando tu primer entrenamiento para que podamos ayudarte.</p>
-                    <button
-                        onClick={() => navigate('/rutinas')}
-                        className={styles.createBtn}
-                    >
-                        Crear mi rutina
-                    </button>
-                </div>
-            ) : (
-                <section className={styles.activitySection}>
-                    <h3 className={styles.sectionTitle}>Actividad Reciente</h3>
-
-                    {summary.ultimo_entreno ? (
-                        <div className={styles.recentWorkout}>
-                            <div>
-                                <p className={styles.workoutName}>{summary.ultimo_entreno.routine_nombre}</p>
-                                <p className={styles.workoutMeta}>
-                                    {new Date(summary.ultimo_entreno.fecha).toLocaleDateString()} • {summary.ultimo_entreno.ejercicios_hechos} Ejercicios
-                                </p>
-                            </div>
-                            <div className={`${styles.feelingBadge} ${summary.ultimo_entreno.feeling === 'facil' ? styles.feelingFacil :
-                                    summary.ultimo_entreno.feeling === 'justo' ? styles.feelingJusto :
-                                        styles.feelingDificil
-                                }`}>
-                                {summary.ultimo_entreno.feeling}
-                            </div>
-                        </div>
-                    ) : (
-                        <p className={styles.noActivity}>Aún no has registrado ningún entrenamiento.</p>
-                    )}
-
-                    <button
-                        onClick={() => navigate('/rutinas')}
-                        className={styles.viewAllBtn}
-                    >
-                        Ver todas mis rutinas
-                    </button>
-                </section>
-            )}
+            <div className={styles.emptyState}>
+                <div className={styles.emptyIcon}>🚀</div>
+                <h2 className={styles.emptyTitle}>Tu Plan {localStorage.getItem('userPlan')?.toUpperCase() || 'FREE'}</h2>
+                <p className={styles.emptyText}>Diseña tu semana de entrenamiento configurando tus rutinas personalizadas.</p>
+                <button
+                    onClick={() => navigate('/rutinas')}
+                    className={styles.createBtn}
+                >
+                    Gestionar Rutinas
+                </button>
+            </div>
         </div>
     )
 }
