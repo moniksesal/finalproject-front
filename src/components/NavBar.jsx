@@ -1,5 +1,5 @@
 import {NavLink} from 'react-router-dom' // es como Link pero detecta si la ruta está activa. además permite aplicar estilos dinámicos como isActive
-import styles from './Navbar.module.css'
+import styles from './NavBar.module.css'
 import logoImg from '../assets/Logo.png'
 
 const Navbar = () => {
