@@ -1,0 +1,27 @@
+/*organizador del espacio y navbar*/
+
+#root {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainWrapper {
+    flex: 1;
+    width: 100%;
+    /* 80px arriba para que el navbar fijo no tape nada */
+    padding-top: 80px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}

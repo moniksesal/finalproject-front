@@ -1,0 +1,191 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    padding-bottom: 120px; /*hueco para que el botón no tape el ult ejercicio*/
+    background-color: var(--bg);
+    min-height: 100vh;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.backBtn {
+    background: none;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.routineTitle {
+    font-size: 35px;
+    font-weight: 900;
+    color: var(--text-dark);
+    margin: 0;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.subtitle {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.exerciseGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.exerciseCard {
+    background: var(--white);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.cardFlex {
+    display: flex;
+}
+
+.imageContainer {
+    width: 120px;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exerciseImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.noImage {
+    font-size: 32px;
+}
+
+.infoContent {
+    padding: 20px;
+    flex: 1;
+}
+
+.infoHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.exerciseName {
+    margin: 0;
+    color: var(--text-dark);
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.videoLink {
+    font-size: 12px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.statsRow {
+    display: flex;
+    gap: 20px;
+}
+
+.statBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.statValue {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--text-dark);
+}
+
+.statLabel {
+    font-size: 11px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.loading, .notFound {
+    text-align: center;
+    padding: 80px 20px;
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--text-dark);
+}
+
+.emptyState {
+    text-align: center;
+    padding: 40px;
+    background: var(--white);
+    border-radius: 16px;
+    border: 2px dashed var(--border);
+    color: var(--text-light);
+}
+
+.floatingAction {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 450px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+}
+
+.startBtn {
+    width: 100%;
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 18px;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: inherit;
+    font-style: italic;
+}
+
+.startBtn:hover {
+    background: #2563eb;
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.5);
+}
+
+.btnIcon {
+    font-size: 20px;
+}

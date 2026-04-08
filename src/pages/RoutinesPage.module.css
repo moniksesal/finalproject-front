@@ -1,0 +1,206 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0;
+    color: var(--text-dark);
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.subtitle {
+    color: var(--text-light);
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.badge {
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 14px;
+    border: 1px solid var(--border);
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dayRow {
+    display: flex;
+    gap: 20px;
+}
+
+.daySidebar {
+    width: 100px;
+    text-align: right;
+    padding-top: 15px;
+}
+
+.dayName {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-light);
+    font-weight: 800;
+}
+
+.dayContent {
+    flex: 1;
+    background: var(--bg);
+    border-radius: 20px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--border);
+    transition: all 0.3s;
+    min-height: 70px;
+}
+
+.dayRow:hover .dayContent {
+    border-color: #d0d0d0;
+    background: var(--white);
+}
+
+.routinesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+}
+
+.routineCard {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 2px 12px;
+    gap: 8px;
+    transition: all 0.2s;
+}
+
+.routineCard:hover {
+    background: #f2f2f2;
+    border-color: #d0d0d0;
+    transform: translateY(-2px);
+}
+
+.routineInfo {
+    text-decoration: none;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 8px 0;
+}
+
+.routineIcon {
+    font-size: 18px;
+}
+
+.deleteBtn {
+    background: none;
+    border: none;
+    color: #bbbbbb;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 12px;
+    transition: color 0.2s;
+    font-family: inherit;
+}
+
+.deleteBtn:hover {
+    color: #ff4d4d;
+}
+
+.emptyText {
+    color: var(--text-light);
+    font-style: italic;
+    font-size: 14px;
+}
+
+.addBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--border);
+    color: var(--text-dark);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    transition: all 0.2s;
+}
+
+.addBtn:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: rotate(90deg);
+}
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    gap: 20px;
+    color: var(--text-light);
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+
+/*responsive*/
+@media (max-width: 600px) {
+    .dayRow {
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .daySidebar {
+        width: 100%;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .dayContent {
+        padding: 10px 15px;
+    }
+}

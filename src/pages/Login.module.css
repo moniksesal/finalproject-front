@@ -1,0 +1,109 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg);
+    padding: 20px;
+}
+
+.card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 32px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--border);
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+    color: var(--text-dark);
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 14px;
+    margin-bottom: 32px
+}
+
+.formGroup {
+    margin-bottom: 20px
+}
+
+.label {
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+    margin-left: 4px
+}
+
+.input {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 16px;
+    border: 2px solid var(--border);
+    font-weight: 600;
+    outline: none;
+    transition: all 0.2s;
+    box-sizing: border-box;
+    font-family: inherit
+}
+
+.input:focus {
+    border-color: var(--primary-color);
+    background-color: var(--white)
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 16px;
+    background-color: #000000;
+    color: var(--white);
+    border: none;
+    border-radius: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s, background-color 0.2s;
+    font-family: inherit
+}
+
+.submitBtn:hover {
+    background-color: var(--primary-color)
+}
+
+.submitBtn:active {
+    transform: scale(0.98)
+}
+
+.switch {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    color: var(--text-light)
+}
+
+.link {
+    color: var(--primary-color);
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.link:hover {
+    text-decoration: underline
+}

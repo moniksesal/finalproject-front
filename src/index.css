@@ -1,0 +1,47 @@
+/*variables, fuentes y reset*/
+
+:root {
+    /* FUENTE */
+    --primary-font: 'Inter', sans-serif;
+
+    /* COLORES PRINCIPALES */
+    --primary-color: #2563eb;
+    --primary-soft: rgba(37, 99, 235, 0.1);
+    --primary-outline: rgba(37, 99, 235, 0.4);
+
+    /* COLORES TEXTO Y FONDO */
+    --bg: #f8fafc;
+    --text-dark: #0f172a;
+    --text-light: #475569;
+    --border: #e2e8f0;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--primary-font);
+    background-color: var(--bg);
+    color: var(--text-dark);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* tipo global */
+h1, h2, h3, h4 {
+    font-weight: 900;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, select {
+    font-family: inherit;
+}

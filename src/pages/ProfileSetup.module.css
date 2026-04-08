@@ -1,0 +1,159 @@
+.container {
+  max-width: 672px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: var(--white);
+  border-radius: 24px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1)
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 8px
+}
+
+.select {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--bg);
+  border-radius: 16px;
+  font-weight: 700;
+  border: 2px solid transparent;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit
+}
+
+.select:focus {
+  border-color: var(--primary-color)
+}
+
+.toggleGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px
+}
+
+.toggleBtn {
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: 700;
+  border: 2px solid var(--border);
+  background: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit
+}
+
+.fumaActive {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+  color: #dc2626
+}
+
+.alcoholActive {
+  border-color: #a855f7;
+  background-color: #faf5ff;
+  color: #9333ea
+}
+
+.sliderLabel {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 8px
+}
+
+.highlight {
+  color: var(--primary-color)
+}
+
+.rangeInput {
+  width: 100%;
+  height: 8px;
+  background-color: var(--border);
+  border-radius: 8px;
+  appearance: none;
+  cursor: pointer
+}
+
+.rangeInput::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer
+}
+
+.waterGrid {
+  display: flex;
+  gap: 8px
+}
+
+.waterBtn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+  background-color: var(--border);
+  color: var(--text-light);
+  transition: all 0.2s;
+  font-family: inherit
+}
+
+.waterActive {
+  background-color: var(--primary-color);
+  color: var(--white);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3)
+}
+
+.saveBtn {
+  width: 100%;
+  padding: 20px;
+  background-color: #000000;
+  color: var(--white);
+  border-radius: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit
+}
+
+.saveBtn:hover {
+  background-color: var(--primary-color)
+}
+
+.saveBtn:active {
+  transform: scale(0.95)
+}
