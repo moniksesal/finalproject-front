@@ -2,6 +2,12 @@
 
 Este es el cliente de mi aplicación de gestión de entrenamientos, desarrollado con **React**. La interfaz permite a los usuarios gestionar sus rutinas, registrar entrenamientos en tiempo real y acceder a funciones exclusivas mediante un sistema de suscripción Premium.
 
+## Instrucciones de uso
+
+1. Hacer registro y login.
+2. Ir a Ajustes y configurar tu estilo de vida. Dependiendo lo que pongas ahí, en el dashboard te saldrán unos comentarios u otros.
+3. Ir a Rutinas, ir al día que quieras. Si quieres poner los ejercicios predefinidos pulsa "AÑADIR EJERCICIO". La S es de SERIES, la R de REPETICIONES, la D de DESCANSO. Añadir según se quiera. Después escribir el nombre de la rutina, por ejemplo "TREN SUPERIOR", y añadir ejercicio.
+4. Si los ejercicios predefinidos se quedan cortos, pásate al plan PREMIUM. Pulsa PREMIUM en el navegador y selecciona el plan que quieras (luego puedes volver al plan free en AJUSTES). Cuando seas PREMIUM ya podrás hacer tus propios ejercicios. Pulsa CREAR NUEVO EJERCICIO. Puedes poner el nombre, la descripción, una URL de imagen y de video. Después guárdalo. Si vuelves a RUTINAS y pulsas tu rutina, puedes ver dentro cada ejercicio con su imagen y su descripción.
 
 ## Características Principales
 
@@ -110,6 +116,10 @@ Este es el cliente de mi aplicación de gestión de entrenamientos, desarrollado
 - Crear apartado de alimentación y relacionarlo con el entrenamiento
 - Gráficas de proteina
 - Hacer apartado de suplementación
+
+## Despliegue
+
+Este proyecto ha sido desplegado con Netlify
 
 
 ## Autora
