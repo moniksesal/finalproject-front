@@ -48,7 +48,7 @@ Este es el cliente de mi aplicación de gestión de entrenamientos, desarrollado
 
 ## Estructura del Proyecto
 
-finalproject-front-gym/
+```finalproject-front-gym/
 ├── public/
 │   ├── favicon.svg
 ├── src/
@@ -90,6 +90,7 @@ finalproject-front-gym/
 ├── eslint.config.js
 ├── vite.config.js
 └── README.md
+```
 
 ## Funcionalidades.
 
